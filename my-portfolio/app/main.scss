@@ -1,0 +1,25 @@
+.main-container {
+
+    font-family: 'Outfit';
+
+    .section-container {
+
+        margin-bottom: 10px;
+    
+        @media screen and (min-width: 1920px) {
+            max-width: 1400px;
+            width: 1400px;
+        }
+    }
+
+    .main-navbar{
+    }
+
+    .wrapper-cover{
+        .punch-line-text{
+            font-family: 'Lora';
+            font-weight: 600;
+        }
+    }
+}
+

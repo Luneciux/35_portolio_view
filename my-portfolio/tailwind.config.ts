@@ -40,6 +40,21 @@ const config: Config = {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
+			'woodsmoke': {
+				'50': '#f4f7f7',
+				'100': '#e3eaea',
+				'200': '#c9d5d8',
+				'300': '#a4b8bc',
+				'400': '#779299',
+				'500': '#5c777e',
+				'600': '#4f656b',
+				'700': '#44545a',
+				'800': '#3d484d',
+				'900': '#363e43',
+				'925': '#2b3135',
+				'950': '#0a0c0d',
+			},
+			
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
@@ -55,7 +70,16 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		animation: {
+		'infinite-scroll': 'infinite-scroll 25s linear infinite',
+		},
+		keyframes: {
+		'infinite-scroll': {
+			from: { transform: 'translateX(0)' },
+			to: { transform: 'translateX(-100%)' },
+		}
+		}         
   	}
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports

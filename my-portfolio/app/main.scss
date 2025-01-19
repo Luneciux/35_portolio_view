@@ -13,11 +13,22 @@
     }
 
     .main-navbar{
+        font-weight: 600;
     }
 
     .wrapper-cover{
+
+        .avatar-image{
+            width: 100px;
+        }
+
         .punch-line-text{
-            font-family: 'Lora';
+            font-family: 'Outfit';
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .cover-presentation-text{
             font-weight: 600;
         }
     }

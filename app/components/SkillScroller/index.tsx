@@ -51,10 +51,10 @@ export default function SkillScroller () {
                 return (
                   <>
                     <li key={index}>
-                      { <Item className="text-4xl"/> }
+                      { <Item className="text-4xl text-woodsmoke-400"/> }
                     </li>
                     <li key={index + "1.5233"}>
-                      <FaStar className="text-white"/>
+                      <FaStar className="text-woodsmoke-800"/>
                     </li>
                   </>
                 )
@@ -70,10 +70,10 @@ export default function SkillScroller () {
                 return (
                   <>
                     <li key={index}>
-                      { <Item className="text-4xl"/> }
+                      { <Item className="text-4xl text-woodsmoke-400"/> }
                     </li>
                     <li key={index + "1.5233"}>
-                      <FaStar className="text-white"/>
+                      <FaStar className="text-woodsmoke-800"/>
                     </li>
                   </>
                 )

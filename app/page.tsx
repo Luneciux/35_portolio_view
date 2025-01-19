@@ -79,10 +79,9 @@ export default function Home() {
         <div className="wrapper wrapper-tecnologias flex justify-center py-28">
           <div className="section-container">
             <section id="tecnologias" className="flex justify-center"> 
-              <div className="flex flex-row tec-content-wrapper items-center w-3/5 p-3">
-
-                <SkillScroller />
-
+              <div className="flex flex-col tec-content-wrapper items-center w-3/5 p-3 gap-4">
+                <SkillScroller />                
+                <span className="text-woodsmoke-300">principais tecnologias</span>
               </div>
             </section>
           </div>

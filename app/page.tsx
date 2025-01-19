@@ -48,11 +48,11 @@ export default function Home() {
 
                 <div className="cover-presentation flex flex-col text-woodsmoke-200">
                   <span className="cover-presentation-text text-xl">
-                    Eaí, sou Josué Eliel!
+                    Eaí, sou Josué Eliel, engenheiro de software e desenvolvedor.
                   </span>
-                  <span className="cover-presentation-text text-xl">
-                    Engenheiro de software e desenvolvedor.
-                  </span>
+                  {/* <span className="cover-presentation-text text-xl">
+                    
+                  </span> */}
                 </div>
 
                 <div className="punch-line">
@@ -81,7 +81,7 @@ export default function Home() {
             <section id="tecnologias" className="flex justify-center"> 
               <div className="flex flex-col tec-content-wrapper items-center w-3/5 p-3 gap-4">
                 <SkillScroller />                
-                <span className="text-woodsmoke-300">principais tecnologias</span>
+                <span className="text-woodsmoke-400">principais tecnologias</span>
               </div>
             </section>
           </div>

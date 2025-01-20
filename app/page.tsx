@@ -17,14 +17,49 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form"
+
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Separator } from "@/components/ui/separator"
+
+import { z } from "zod"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { useForm } from "react-hook-form"
+ 
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoMenuOutline } from "react-icons/io5";
 
-import { Button } from "@/components/ui/button"
 import SkillScroller from "./components/SkillScroller";
 
+const formSchema = z.object({
+  username: z.string().min(2, {
+    message: "Username must be at least 2 characters.",
+  }),
+})
 
 export default function Home() {
+
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      username: "",
+    },
+  })
+
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    // Do something with the form values.
+    // ✅ This will be type-safe and validated.
+    console.log(values)
+  }
 
   return (
     
@@ -71,7 +106,7 @@ export default function Home() {
                 </div>
 
                 <div className="cover-presentation flex flex-col text-woodsmoke-200">
-                  <div className="flex justify-center cover-presentation-text min-[1400px]:text-xl">        
+                  <div className="min-[1400px]:flex justify-center cover-presentation-text min-[1400px]:text-xl">        
                     Eaí, sou Josué Eliel, 
                     <div className="type-animation">
                       <div className="text-animation" />
@@ -111,7 +146,8 @@ export default function Home() {
             <section id="tecnologias" className="flex justify-center"> 
               <div className="flex flex-col tec-content-wrapper items-center min-[1400px]:w-3/5 min-[320px]:w-2/4 p-3 gap-4">
                 <SkillScroller />                
-                <span className="text-woodsmoke-400">principais tecnologias</span>
+                <span className="text-woodsmoke-400">principais tecnologias</span> 
+                {/* TODO: trocar para principais empresas em que trabalhei */}
               </div>
             </section>
           </div>
@@ -157,17 +193,41 @@ export default function Home() {
             </section>
           </div>
         </div>
+                    
+        <div className="wrapper wrapper-footer-separator py-16 px-10 bg-woodsmoke-950"> 
+          <Separator className="bg-woodsmoke-900"/>
+        </div>
 
-        <div  className="wrapper wrapper-footer flex justify-center">
+        <div  className="wrapper wrapper-footer flex justify-center bg-woodsmoke-950">
           <div className="section-container">        
             <section id="footer"> 
-              FOOTER
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+                  <FormField
+                    control={form.control}
+                    name="username"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel className="text-woodsmoke-400">Username</FormLabel>
+                        <FormControl>
+                          <Input placeholder="shadcn" {...field} />
+                        </FormControl>
+                        <FormDescription>
+                          This is your public display name.
+                        </FormDescription>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  <Button type="submit">Submit</Button>
+                </form>
+              </Form>
             </section>
           </div>
         </div>
 
-        <div  className="wrapper wrapper-footer flex justify-center bg-gray-950">
-          <div className="section-container flex justify-center text-slate-300 py-14">        
+        <div  className="wrapper wrapper-footer flex justify-center bg-woodsmoke-950">
+          <div className="section-container flex justify-center text-woodsmoke-300 py-14">        
             <section id="copy"> 
               <span>
               Josué Eliel © 2025. Todos os direitos reservados. 

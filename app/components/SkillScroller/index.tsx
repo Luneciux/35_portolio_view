@@ -43,7 +43,6 @@ export default function SkillScroller () {
         // { src: FaReact, alt: "Jenkins" },
     ];
     
-
     return (
         <>
           <div className="flex skill-list min-[1400px]:w-full min-[320px]:w-1/4 flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">

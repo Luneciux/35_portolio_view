@@ -24,12 +24,12 @@
 
         .punch-line-text{
             font-family: 'Outfit';
-            font-weight: 700;
+            font-weight: 600;
             line-height: 1;
         }
 
         .cover-presentation-text{
-            font-weight: 600;
+            font-weight: 500;
 
             .text-animation{
                 position: absolute;
@@ -46,7 +46,6 @@
             }
             
             .type-animation{
-                animation: blink .5s step-end infinite alternate;
                 position: relative;    
             }
 

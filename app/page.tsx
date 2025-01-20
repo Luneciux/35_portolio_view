@@ -100,7 +100,7 @@ export default function Home() {
             <section id="cover" className="flex justify-center text-center"> 
               <div className="cover-content-wrapper w-3/4 flex flex-col gap-2 min-[1400px]:pt-32">
                 <div className="cover-avatar flex justify-center pb-6">
-                  <Avatar className="w-14 h-14">
+                  <Avatar className="w-14 h-14 show-up-on-load-fast">
                     <AvatarImage src="https://avatars.githubusercontent.com/u/39069174?v=4" />
                     <AvatarFallback>JE</AvatarFallback>
                   </Avatar>
@@ -121,7 +121,7 @@ export default function Home() {
                   </span> */}
                 </div>
 
-                <div className="punch-line">
+                <div className="punch-line show-up-on-load-slow">
                   <span className="punch-line-text min-[1400px]:text-6xl min-[320px]:text-4xl text-woodsmoke-50">Traduzo desafios em soluções funcionais e <span className="text-orange-500">eficientes</span>.</span>                
                 </div>
 

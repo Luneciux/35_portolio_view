@@ -68,6 +68,7 @@ export default function Home() {
 
         <div className="wrapper wrapper-navbar flex min-[1400px]:justify-center">
           <div className="section-container flex flex-row justify-center max-[1400px]:hidden">
+            {/* //TODO: ARRUMAR ESSA NAVBAR DO CELL */}
             <div className="main-navbar p-3 text-woodsmoke-50 text-base backdrop-blur-sm bg-woodsmoke-600 border-solid border border-woodsmoke-700 rounded-full px-12">         
               <nav className="flex gap-5 text-sm">
                 <a href="#cover" rel="noopener noreferrer" className="hover:text-woodsmoke-300 transition">Home</a>
@@ -98,7 +99,7 @@ export default function Home() {
           <div className="section-container">
             <section id="cover" className="flex justify-center text-center"> 
               <div className="cover-content-wrapper w-3/4 flex flex-col gap-2 min-[1400px]:pt-32">
-                <div className="cover-avatar flex justify-center pb-3">
+                <div className="cover-avatar flex justify-center pb-6">
                   <Avatar className="w-14 h-14">
                     <AvatarImage src="https://avatars.githubusercontent.com/u/39069174?v=4" />
                     <AvatarFallback>JE</AvatarFallback>
@@ -106,12 +107,12 @@ export default function Home() {
                 </div>
 
                 <div className="cover-presentation flex flex-col text-woodsmoke-200">
-                  <div className="min-[1400px]:flex justify-center cover-presentation-text min-[1400px]:text-xl">        
-                    Eaí, sou Josué Eliel, 
+                  <div className="min-[1400px]:flex min-[1400px]:pb-4 justify-center cover-presentation-text min-[1400px]:text-xl">        
+                    eaí, sou Josué Eliel, 
                     <div className="type-animation">
                       <div className="text-animation" />
                       <div className="text-animation-wrapper"> 
-                        &nbsp; engenheiro de software e desenvolvedor.
+                        &nbsp; <span>Engenheiro</span> de Software e Desenvolvedor.
                       </div>
                     </div>
                   </div>
@@ -121,7 +122,7 @@ export default function Home() {
                 </div>
 
                 <div className="punch-line">
-                  <span className="punch-line-text min-[1400px]:text-6xl min-[320px]:text-4xl text-woodsmoke-50">Traduzo desafios em soluções funcionais e eficientes.</span>                
+                  <span className="punch-line-text min-[1400px]:text-6xl min-[320px]:text-4xl text-woodsmoke-50">Traduzo desafios em soluções funcionais e <span className="text-orange-500">eficientes</span>.</span>                
                 </div>
 
                 <div className="buttons-section flex flex-row justify-center gap-4 pt-10">
@@ -200,28 +201,42 @@ export default function Home() {
 
         <div  className="wrapper wrapper-footer flex justify-center bg-woodsmoke-950">
           <div className="section-container">        
-            <section id="footer"> 
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-                  <FormField
-                    control={form.control}
-                    name="username"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-woodsmoke-400">Username</FormLabel>
-                        <FormControl>
-                          <Input placeholder="shadcn" {...field} />
-                        </FormControl>
-                        <FormDescription>
-                          This is your public display name.
-                        </FormDescription>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <Button type="submit">Submit</Button>
-                </form>
-              </Form>
+            <section id="footer">
+              <div className="flex gap-8 py-10  place-content-between">
+                <div className="footer-content-text text-woodsmoke-100 w-full">
+                  ENTRAR EM CONTATOENTRAR EM CONTATO
+                  ENTRAR EM CONTATOENTRAR EM CONTATOENTRAR EM CONTATO
+                  ENTRAR EM CONTATOENTRAR EM CONTATOENTRAR EM CONTATOENTRAR EM CONTATO
+                  ENTRAR EM CONTATOENTRAR EM CONTATOENTRAR EM CONTATOENTRAR EM CONTATOENTRAR EM CONTATO                  
+                </div>
+                <div className="footer-form-wrapper w-full">
+                  <Form {...form}>
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+                      <div className="flex justify-end">
+                        <div className="w-3/5">
+                          <FormField
+                            control={form.control}
+                            name="username"
+                            render={({ field }) => (
+                                  <FormItem className="w-full">
+                                    <FormLabel className="text-woodsmoke-400">Username</FormLabel>
+                                    <FormControl>
+                                      <Input placeholder="shadcn" {...field} />
+                                    </FormControl>
+                                    <FormDescription>
+                                      This is your public display name.
+                                    </FormDescription>
+                                    <FormMessage />
+                                  </FormItem>
+                            )}
+                            />
+                          <Button type="submit">Submit</Button>
+                        </div>
+                      </div>
+                    </form>
+                  </Form>
+                </div> 
+                </div>
             </section>
           </div>
         </div>

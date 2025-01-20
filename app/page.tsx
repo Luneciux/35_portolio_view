@@ -122,7 +122,7 @@ export default function Home() {
                 </div>
 
                 <div className="punch-line show-up-on-load-slow">
-                  <span className="punch-line-text min-[1400px]:text-6xl min-[320px]:text-4xl text-woodsmoke-50">Traduzo desafios em soluções funcionais e <span className="text-orange-500">eficientes</span>.</span>                
+                  <span className="punch-line-text min-[1400px]:text-6xl min-[320px]:text-4xl text-woodsmoke-50">Traduzo desafios em soluções funcionais e <span className="text-highlight-gradient">eficientes</span>.</span>                
                 </div>
 
                 <div className="buttons-section flex flex-row justify-center gap-4 pt-10">

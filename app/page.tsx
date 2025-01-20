@@ -71,9 +71,15 @@ export default function Home() {
                 </div>
 
                 <div className="cover-presentation flex flex-col text-woodsmoke-200">
-                  <span className="cover-presentation-text min-[1400px]:text-xl">
-                    Eaí, sou Josué Eliel, engenheiro de software e desenvolvedor.
-                  </span>
+                  <div className="flex justify-center cover-presentation-text min-[1400px]:text-xl">        
+                    Eaí, sou Josué Eliel, 
+                    <div className="type-animation">
+                      <div className="text-animation" />
+                      <div className="text-animation-wrapper"> 
+                        &nbsp; engenheiro de software e desenvolvedor.
+                      </div>
+                    </div>
+                  </div>
                   {/* <span className="cover-presentation-text text-xl">
                     
                   </span> */}

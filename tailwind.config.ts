@@ -51,7 +51,7 @@ const config: Config = {
 				'700': '#44545a',
 				'800': '#3d484d',
 				'900': '#363e43',
-				'925': 'hsl(207, 9%, 12%)',
+				'925': '#1c1f21',
 				'950': '#0a0c0d',
 			},
 			
@@ -71,15 +71,15 @@ const config: Config = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
-		animation: {
-		'infinite-scroll': 'infinite-scroll 25s linear infinite',
-		},
-		keyframes: {
-		'infinite-scroll': {
-			from: { transform: 'translateX(0)' },
-			to: { transform: 'translateX(-100%)' },
-		}
-		}         
+		// animation: {
+		// 'infinite-scroll': 'infinite-scroll 25s linear infinite',
+		// },
+		// keyframes: {
+		// 'infinite-scroll': {
+		// 	from: { transform: 'translateX(0)' },
+		// 	to: { transform: 'translateX(-100%)' },
+		// }
+		// }         
   	}
   },
   // eslint-disable-next-line @typescript-eslint/no-require-imports

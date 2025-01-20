@@ -30,6 +30,42 @@
 
         .cover-presentation-text{
             font-weight: 600;
+
+            .text-animation{
+                position: absolute;
+                height: 80%;
+                width: 0%;
+                left: 101%;
+                background-color: #1c1f21;
+                animation: typing 2s linear, blink .9s infinite alternate;
+                animation-timing-function: steps(41);
+                will-change: animation;
+                white-space: nowrap;
+                overflow: hidden;
+                border-left: 3px solid #c9d5d8;
+            }
+            
+            .type-animation{
+                animation: blink .5s step-end infinite alternate;
+                position: relative;    
+            }
+
+            @keyframes typing {
+                from {
+                    left: 0%;
+                    width: 100%;
+                }
+                to {
+                    left: 101%;
+                    width: 0%;
+                }
+            }
+
+            @keyframes blink {
+                50% {
+                  border-color: transparent
+                }
+              }
         }
     }
 }

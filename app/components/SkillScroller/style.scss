@@ -1,0 +1,31 @@
+
+$position: 0%;
+
+.animate-infinite-scroll {
+  animation: 
+    infinite-scroll 25s linear infinite;
+}
+
+// .skill-list:hover{
+//   .oposite-animation-container{
+//     animation: infinite-scroll-opo 0.01s linear infinite;
+//   }
+// }
+
+@keyframes infinite-scroll {
+  from {
+      transform: translateX($position);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes infinite-scroll-opo {
+  from {
+      transform: translateX($position);
+  }
+  to {
+      transform: translateX(+100px);
+  }
+}

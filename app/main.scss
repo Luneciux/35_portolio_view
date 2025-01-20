@@ -125,15 +125,15 @@
 
     color: transparent;
     background-image: rgb(219,168,143);
-    background-image: -moz-linear-gradient(222deg, rgba(219,168,143,1) 0%, rgba(235,194,175,1) 35%, rgba(255,239,232,1) 48%, rgba(255,245,241,1) 52%, rgba(255,239,232,1) 55%, rgba(235,194,175,1) 74%, rgba(219,168,143,1) 100%);
-    background-image: -webkit-linear-gradient(222deg, rgba(219,168,143,1) 0%, rgba(235,194,175,1) 35%, rgba(255,239,232,1) 48%, rgba(255,245,241,1) 52%, rgba(255,239,232,1) 55%, rgba(235,194,175,1) 74%, rgba(219,168,143,1) 100%);
-    background-image: linear-gradient(222deg, rgba(219,168,143,1) 0%, rgba(235,194,175,1) 35%, rgba(255,239,232,1) 48%, rgba(255,245,241,1) 52%, rgba(255,239,232,1) 55%, rgba(235,194,175,1) 74%, rgba(219,168,143,1) 100%);
+    background-image: -moz-linear-gradient(222deg, rgba(219,168,143,1) 24%, rgba(255,239,232,1) 49%, rgba(255,241,236,1) 51%, rgba(255,245,241,1) 54%, rgba(255,239,232,1) 57%, rgba(219,168,143,1) 72%);
+    background-image: -webkit-linear-gradient(222deg, rgba(219,168,143,1) 24%, rgba(255,239,232,1) 49%, rgba(255,241,236,1) 51%, rgba(255,245,241,1) 54%, rgba(255,239,232,1) 57%, rgba(219,168,143,1) 72%);
+    background-image: linear-gradient(222deg, rgba(219,168,143,1) 24%, rgba(255,239,232,1) 49%, rgba(255,241,236,1) 51%, rgba(255,245,241,1) 54%, rgba(255,239,232,1) 57%, rgba(219,168,143,1) 72%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dba88f",endColorstr="#dba88f",GradientType=1);
     background-clip: text;
-    animation: gradient 20s ease infinite reverse;
+    animation: gradient 14s ease infinite reverse;
     background-repeat: repeat;
     animation-delay: 2.4s;
-    background-size: 500% 200%;
+    background-size: 600% 200%;
     
     @keyframes gradient {
         0% {
